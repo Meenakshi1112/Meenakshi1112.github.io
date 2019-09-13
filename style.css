@@ -1,0 +1,178 @@
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+font-family: "Symbola";
+src: url("Symbola_hint.eot?") format("eot");
+src: url("Symbola_hint.woff") format("woff");
+src: url("Symbola_hint.ttf") format("truetype");
+src: url("Symbola_hint.svg#Symbola") format("svg");
+font-weight: normal;
+font-style:normal;}
+
+* {
+box-sizing: border-box;}
+
+html, body {
+margin: 0;
+padding: 0;
+width: 80%;
+height: 80%;
+font-family: Symbola;
+font-size: 16px;
+overflow: auto}
+
+#blockly {
+position: absolute;
+top: 60px;
+left: 80px;
+z-index: 3;
+width: 60%;
+background-color: floralwhite;
+height: 100%; !important;}
+
+
+#blockly svg {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+background-color: Transparent;
+overflow-x: hidden;
+}
+
+#canvas {
+position: absolute;
+top: 300px;
+left: 800px;
+border: 200px;
+width: 100%;
+height: 100%;
+background-color:white;
+overflow: hidden
+}
+
+#turtle {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 2;
+width: 100%;
+height: 100%;
+background-color: Transparent;}
+
+#scroll-x {
+position: fixed;
+bottom: 0;
+z-index: 5;
+height: 10px;
+margin: 5px;
+background-color: Grey;
+border-radius: 5px;
+opacity: 0.8;}
+
+#scroll-y {
+position: fixed;
+right: 0;
+z-index: 5;
+width: 10px;
+margin: 5px;
+background-color: Grey;
+border-radius: 5px;
+opacity: 0.8;}
+
+#toolbar {
+position: fixed;
+bottom: 0;
+right: 480px;
+z-index: 5;
+margin: 5px 20px 0 0;
+padding: 0 0 5px 0;
+width: 50px;
+border-radius: 10px;
+background-color: rgba(211, 211, 211, 0.8);
+display: inline
+}
+
+#toolbar input[type=button], #toolbar fieldset {
+margin: 5px 5px 0 5px;
+padding: 2px;
+width: 40px;
+height: 40px;
+border: 1px solid Transparent;
+outline: none;
+border-radius: 5px;
+background-color: Transparent;
+font-size: 1.5rem;
+display: inline}
+
+#toolbar input[type=button]:not(:disabled):hover, #toolbar fieldset:hover {
+border: 1px solid Grey;
+background-color: rgba(228, 228, 228, 0.8);}
+
+#toolbar input[type=range] {
+margin: 6px 0 5px 0;
+width: 32px;
+display: inline}
+
+hr {
+margin: 5px 10px 0 10px;
+width: 30px;
+border: 1px solid Black;
+border-radius: 2px;}
+
+#toolboxes {
+position: absolute;
+top: 70px;
+left: 0px;
+z-index: 10;
+}
+
+#toolboxes input {
+width: 90px;
+height: 52px;
+margin: 0;
+padding: 2px;
+outline: none;
+border-width: 3px;
+border-style: solid;
+border-radius: 5px;
+background-color:bisque;
+color: Black;
+display: block;
+font-family: Georgia;
+font-size: 16px;}
+
+#drawtools {
+border-color: #5b5ba5;}
+
+#drawtools:hover, #drawtools.open {
+background-color: #5b5ba5;
+color: White;}
+
+#control {
+border-color: #a55b5b;}
+
+#control:hover, #control.open {
+background-color: #a55b5b;
+color: White;}
+
+#loops {
+border-color: #5ba55b;}
+
+#loops:hover, #loops.open {
+background-color: #5ba55b;
+color: White;}
+
+#math {
+border-color: #8B008B;}
+
+#math:hover, #math.open {
+background-color: #8B008B;
+color: White;}
+
+#looks {
+border-color: #bab86c;}
+
+#looks:hover, #looks.open {
+background-color: #bab86c;
+color: White;}
+
